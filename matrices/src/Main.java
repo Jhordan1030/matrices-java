@@ -3,33 +3,47 @@ public class Main {
     public static void imprimirMatriz(int [][]matriz){
         int filas = matriz.length;
         int columnas = matriz[0].length;
-        for (int i = filas -1; i >= 0 ; i--) {
-            for (int j = 0; j < columnas; j++) {
-                System.out.print(matriz[i][j] + "\t");
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[0].length; j++) {
+                System.out.print("\t" + matriz[i][j] + " ");
             }
             System.out.println();
+       }
+    }
+
+    public static int[][] SumaMatrices(int[][]matriz1,int[][]matriz2,int n){
+        int[][] resultado = new int[n][n];
+        for (int i = 0; i < matriz1.length; i++) {
+            for (int j = 0; j < matriz1[0].length; j++) {
+                resultado[i][j] = matriz1[i][j] + matriz2[i][j];
+
+            }
         }
+        imprimirMatriz(resultado);
+        return resultado;
     }
     public static void main(String[] args) {
 
         System.out.println("Aqui trabajaremos Matrices");
-//        int[][] matriz = new int[6][6];
-//        int cont = 1;
-//
-//        for (int i = 0; i < matriz.length; i++) {
-//            for (int j = 0; j < matriz[0].length; j++) {
-//                matriz[i][j] = cont;
-//                cont++;
-//            }
-//        }
-//
+        int n = 3;
+        int[][] matriz = new int[n][n];
+        int cont = 1;
+
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[0].length; j++) {
+                matriz[i][j] = cont;
+                cont++;
+            }
+        }
+        System.out.println("Matriz1");
+        imprimirMatriz(matriz);
 //        for (int i = 0; i < matriz.length; i++) {
 //            for (int j = 0; j < matriz[0].length; j++) {
 //                System.out.print("\t" + matriz[i][j] + " ");
 //            }
 //            System.out.println();
 //        }
-//
+
 //        System.out.println("Matriz invertida");
 //
 //        int filas = matriz.length;
@@ -41,30 +55,49 @@ public class Main {
 //                matriz[i][columnas - 1 - j] = temp;
 //            }
 //        }
-//
-//        imprimirMatriz(matriz);
 
-        int[][] matriz;
-        matriz = new int[3][3];
 
-//        matriz[0][0] = 1;
-//        matriz[0][1] = ;
-        matriz[0][2] = 157;
-//
-//        matriz[1][0] = 22;
-//        matriz[1][1] = 22;
-       matriz[1][2] = 22;
 
-//        matriz[2][0] = 22;
-//        matriz[2][1] = 22;
-        matriz[2][2] = 9998;
-
-        for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz[0].length; j++) {
-                System.out.print(matriz[i][j] +"\t");
+        int[][] matriz2 = new int[n][n];
+        int cont2 = 4;
+        for (int i = 0; i < matriz2.length; i++) {
+            for (int j = 0; j < matriz2[0].length; j++) {
+                matriz2[i][j] = cont2;
+                cont2 += 2;
             }
-            System.out.println();
         }
+        System.out.println("Matriz 2");
+        imprimirMatriz(matriz2);
+
+        System.out.println("Suma de Matrices");
+//        int [][] resultado = new int[n][n];
+//        for (int i = 0; i < matriz.length; i++) {
+//            for (int j = 0; j < matriz[0].length; j++) {
+//                resultado[i][j] = matriz[i][j] * matriz2[i][j];
+//            }
+//        }
+        SumaMatrices(matriz,matriz2,n);
+//        int[][] matriz;
+//        matriz = new int[3][3];
+//
+////        matriz[0][0] = 1;
+////        matriz[0][1] = ;
+//        matriz[0][2] = 157;
+////
+////        matriz[1][0] = 22;
+////        matriz[1][1] = 22;
+//       matriz[1][2] = 22;
+//
+////        matriz[2][0] = 22;
+////        matriz[2][1] = 22;
+//        matriz[2][2] = 9998;
+//
+//        for (int i = 0; i < matriz.length; i++) {
+//            for (int j = 0; j < matriz[0].length; j++) {
+//                System.out.print(matriz[i][j] +"\t");
+//            }
+//            System.out.println();
+//        }
     }
 
 }
