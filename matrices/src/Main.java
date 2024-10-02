@@ -1,8 +1,7 @@
 public class Main {
 
     public static void imprimirMatriz(int [][]matriz){
-        int filas = matriz.length;
-        int columnas = matriz[0].length;
+
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[0].length; j++) {
                 System.out.print("\t" + matriz[i][j] + " ");
@@ -22,10 +21,57 @@ public class Main {
         imprimirMatriz(resultado);
         return resultado;
     }
+
+    public static int[][]Inferior(int[][]matriz){
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[0].length; j++) {
+                if (i > j){
+                    matriz[i][j] = 0;
+                }
+            }
+        }
+        imprimirMatriz(matriz);
+        return matriz;
+    }
+    public static int[][]Superio(int[][]matriz){
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[0].length; j++) {
+                if (i < j){
+                    matriz[i][j] = 0;
+                }
+            }
+        }
+        imprimirMatriz(matriz);
+        return matriz;
+    }
+    public static int[][]SuperioCompleta(int[][]matriz,int n){
+        int r = n / 2;
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[0].length; j++) {
+                if (i < r){
+                    matriz[i][j] = 0;
+                }
+            }
+        }
+        imprimirMatriz(matriz);
+        return matriz;
+    }
+    public static int[][]InferiorCompleta(int[][]matriz,int n){
+        int r = n / 2;
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[0].length; j++) {
+                if (i > r){
+                    matriz[i][j] = 0;
+                }
+            }
+        }
+        imprimirMatriz(matriz);
+        return matriz;
+    }
     public static void main(String[] args) {
 
         System.out.println("Aqui trabajaremos Matrices");
-        int n = 3;
+        int n = 10;
         int[][] matriz = new int[n][n];
         int cont = 1;
 
@@ -37,6 +83,19 @@ public class Main {
         }
         System.out.println("Matriz1");
         imprimirMatriz(matriz);
+
+        int r = n / 2;
+        System.out.println(r);
+
+        //SuperioCompleta(matriz,n);
+
+        InferiorCompleta(matriz,n);
+
+//        System.out.println("Matriz inferior");
+//      //  inferior(matriz);
+//        System.out.println("Matriz superio");
+//        Superio(matriz);
+
 //        for (int i = 0; i < matriz.length; i++) {
 //            for (int j = 0; j < matriz[0].length; j++) {
 //                System.out.print("\t" + matriz[i][j] + " ");
@@ -58,25 +117,25 @@ public class Main {
 
 
 
-        int[][] matriz2 = new int[n][n];
-        int cont2 = 4;
-        for (int i = 0; i < matriz2.length; i++) {
-            for (int j = 0; j < matriz2[0].length; j++) {
-                matriz2[i][j] = cont2;
-                cont2 += 2;
-            }
-        }
-        System.out.println("Matriz 2");
-        imprimirMatriz(matriz2);
-
-        System.out.println("Suma de Matrices");
+//        int[][] matriz2 = new int[n][n];
+//        int cont2 = 4;
+//        for (int i = 0; i < matriz2.length; i++) {
+//            for (int j = 0; j < matriz2[0].length; j++) {
+//                matriz2[i][j] = cont2;
+//                cont2 += 2;
+//            }
+//        }
+//        System.out.println("Matriz 2");
+//        imprimirMatriz(matriz2);
+//
+//        System.out.println("Suma de Matrices");
 //        int [][] resultado = new int[n][n];
 //        for (int i = 0; i < matriz.length; i++) {
 //            for (int j = 0; j < matriz[0].length; j++) {
 //                resultado[i][j] = matriz[i][j] * matriz2[i][j];
 //            }
 //        }
-        SumaMatrices(matriz,matriz2,n);
+//        SumaMatrices(matriz,matriz2,n);
 //        int[][] matriz;
 //        matriz = new int[3][3];
 //
