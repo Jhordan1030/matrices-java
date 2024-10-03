@@ -1,3 +1,37 @@
 hay una rama cajero que hay que corregir errores y actulizar para que haya un mejor funcionamiento
 
-se creo una rama llamada rama-nueva
+se creo una nueva rama-for
+
+
+
+1. Suma de Filas y Columnas
+Escribe un programa que pida al usuario llenar una matriz de 4x4, y luego calcule y muestre la suma de cada fila y de cada columna por separado.
+
+2. Encontrar el Mayor Elemento en una Matriz
+Escribe un programa que llene una matriz de 5x5 con números aleatorios entre 1 y 100, y luego encuentre e imprima el valor más grande de la matriz.
+
+3. Contar Números Pares e Impares
+Escribe un programa que pida al usuario llenar una matriz de 3x3, y luego cuente cuántos números pares e impares contiene la matriz.
+
+4. Matriz de Identidad
+Escribe un programa que cree una matriz de identidad de tamaño 4x4. Una matriz de identidad tiene 1 en la diagonal principal y 0 en las otras posiciones.
+
+5. Suma de Dos Matrices
+Escribe un programa que pida al usuario llenar dos matrices de 3x3 y luego calcule la suma de estas matrices, mostrando el resultado en una nueva matriz.
+
+6. Multiplicación de Matrices
+Escribe un programa que multiplique dos matrices de 3x3 ingresadas por el usuario. Asegúrate de seguir las reglas para la multiplicación de matrices.
+
+7. Rotar una Matriz
+Escribe un programa que permita rotar una matriz de 3x3 en 90 grados en sentido horario. Muestra la matriz antes y después de la rotación.
+
+8. Matriz Triangular Superior
+Escribe un programa que cree una matriz de 4x4 y luego imprima la parte triangular superior (los elementos por encima de la diagonal principal).
+
+9. Promedio de una Matriz
+Escribe un programa que llene una matriz de 3x3 con números enteros introducidos por el usuario, y luego calcule el promedio de todos los elementos de la matriz.
+
+10. Búsqueda de Elemento en una Matriz
+Escribe un programa que llene una matriz de 5x5 con números enteros. Luego, pide al usuario un número y busca si ese número está en la matriz. Si está, imprime la posición, de lo contrario imprime un mensaje de "No encontrado".
+
+Estos ejercicios te ayudarán a comprender mejor el uso de matrices y el ciclo for en Java. ¿Te gustaría alguna pista para alguno de ellos o más detalles?
