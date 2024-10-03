@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("ESta es la rama main :)");
+        System.out.println("Esta es la rama main :)");
 
 
 
