@@ -75,21 +75,28 @@ public class Main {
         int[][] matriz = new int[n][n];
         int cont = 1;
 
+//        for (int i = 0; i < matriz.length; i++) {
+//            for (int j = 0; j < matriz[0].length; j++) {
+//                matriz[i][j] = cont;
+//                cont++;
+//            }
+//        }
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[0].length; j++) {
-                matriz[i][j] = cont;
-                cont++;
+                matriz[i][j] = (int) (Math.random()*101);
             }
         }
+        
         System.out.println("Matriz1");
         imprimirMatriz(matriz);
 
-        int r = n / 2;
-        System.out.println(r);
-
-        //SuperioCompleta(matriz,n);
-
-        InferiorCompleta(matriz,n);
+//        int r = n / 2;
+//        System.out.println(r);
+//
+//        //SuperioCompleta(matriz,n);
+//
+//        InferiorCompleta(matriz,n);
+        
 
 //        System.out.println("Matriz inferior");
 //      //  inferior(matriz);
